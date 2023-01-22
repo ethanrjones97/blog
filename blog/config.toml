@@ -1,0 +1,46 @@
+# Hugo Config for blog.ethanrjones.name
+baseURL = '/'
+languageCode = 'en-us'
+
+# Personalize website names and headers.
+title = 'Bits and Bytes'
+subtitle = "A Tech Blog by Ethan R. Jones, Linux Nerd."
+owner = "Ethan R. Jones"
+
+# Customize post button names.
+menuMore = "Show More"
+readMore = "Read More"
+readOtherPosts = "Read Other Posts"
+newerPosts = "Newer Posts"
+olderPosts = "Older Posts"
+missingContentMessage = "404 - Page Not Found..."
+missingBackButtonLabel = "Back to home page"
+
+# Allow :: codes for emoji in posts.
+enableEmoji = true
+
+#Enable a robots.txt for Google bot. 
+enableRobotsTXT = true
+
+# Choose Theme
+theme = "terminal"
+
+[menu]
+  [[menu.main]]
+    identifier = "who"
+    name = "Ethan R. Jones"
+    url = "https://ethanrjones.name/"
+
+[params]
+
+  # !IMPORTANT for "logo" at top.
+  logo.logoText = 'Bits and Bytes'
+  themeColor = "pink"
+  favicon = "favicon.webp"
+
+  # Will show git related data.
+  showLastUpdated = true
+  showMenuItems = 2
+  showLanguageSelector = false
+  centerTheme = true
+  readingTime = true
