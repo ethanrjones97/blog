@@ -1,11 +1,11 @@
 # Hugo Config for blog.ethanrjones.name
-baseURL = '/'
+baseURL = 'https://blog.ethanrjones.name'
 languageCode = 'en-us'
 
 # Personalize website names and headers.
 title = 'Bits and Bytes'
 subtitle = "A Tech Blog by Ethan R. Jones, Linux Nerd."
-owner = "Ethan R. Jones"
+author = "Ethan R. Jones"
 
 # Customize post button names.
 menuMore = "Show More"
@@ -23,24 +23,27 @@ enableEmoji = true
 enableRobotsTXT = true
 
 # Choose Theme
-theme = "terminal"
+theme = "hugo-bearblog"
 
 [menu]
   [[menu.main]]
-    identifier = "who"
-    name = "Ethan R. Jones"
+    identifier = "me"
+    name = "Me"
     url = "https://ethanrjones.name/"
+    weight = 0
 
 [params]
-
-  # !IMPORTANT for "logo" at top.
-  logo.logoText = 'Bits and Bytes'
   themeColor = "pink"
   favicon = "favicon.webp"
+  mainSections = ["posts"]
+  # OpenGraph related bits.
+  title = "Bits and Bytes"
+  description = "A Tech Blog by Ethan R. Jones, Linux Nerd."
+  # image = ["static/share.jpg"] # TODO - need a good OpenGraph image...
 
   # Will show git related data.
   showLastUpdated = true
-  showMenuItems = 2
+
   showLanguageSelector = false
   centerTheme = true
   readingTime = true
